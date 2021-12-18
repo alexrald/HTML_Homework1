@@ -1,3 +1,9 @@
+body {
+    background-image: url("../images/backgorund.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .mandatory {
     font-style:         italic;
     color:              blue;
