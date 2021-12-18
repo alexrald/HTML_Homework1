@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip Registration Form</title>
+    <link href = "../assets/styles/style.css" type = "text/css" rel = "stylesheet"/>
+</head>
+<body>
+
+    <header>
+        <button class = "navi">
+            <a href = "register.html">Register Trip</a>
+        </button>
+        <button class = "navi">
+            <a href = "register.html">Hot offers</a>
+        </button>
+        <button class = "navi">
+            <a href = "register.html">Partners</a>
+        </button>
+        <button class = "navi">
+            <a href = "register.html">Contacts</a>
+        </button>
+    </header>
+
+    <h1>Register your trip here!</h1>
+    <h3>Please fill in the details of your journey</h3>
+    <div id = "wrapperDiv">
+        <div id = "formDiv">
+            <p class = "mandatory">Entries in italic are mandatory</p>
+            <form action = "register.html" method="post">
+                <table>
+                    <tr>
+                        <td><label for = "fname" class = "mandatory">Full Name</label></td>
+                        <td><input id = "fname" type = "text" name = "fullname" value = "Full name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "nationality" class = "mandatory">Nationality</label></td>
+                        <td><input id = "nationality" type = "text" name = "nationality" value = "Nationality"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "destination" class = "mandatory">Destination</label></td>
+                        <td><input id = "destination" type = "text" name = "destination" value = "Destination"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "mode">Travel Mode</label></td>
+                        <td>
+                            <select id = "mode" name = "mode">
+                                <option value = "1">Airplane</option>
+                                <option value = "2">Train</option>
+                                <option value = "3">Bus</option>
+                                <option value = "4">Car</option>
+                                <option value = "5">Ferry</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for = "date_start">Starting date</label></td>
+                        <td><input id = "date_start" type = "date" name = "date_start"></td>
+                    </tr>
+                    <tr>
+                        <td><label for = "date_end">Ending date</label></td>
+                        <td><input id = "date_end" type = "date" name = "date_end"></td>
+                    </tr>
+                </table>
+                <input type="Submit" value="Send">
+                <input type="Reset" value="Reset">
+            </form>
+        </div>
+    </div>
+
+    <div id = "descDiv" class="descr">
+        <p>
+            Please register your trip if you want to receive special offers on tickets and accommodation.
+            Availability of those offers depends on how many people are interested in travelling to your destination on given dates.
+        </p>
+        <p>
+            If you leave the trip dates and mode of transportation empty, we will not filter by those parameters and offer you all available opportunities.
+        </p>
+        <p class = "disclaimer">By registering, you give your explicit permission for your data to be shared with our partners.</p>
+    </div>
+
+    <div id = "popDest">
+        <h2>Popular Destinations:</h2>
+        <p id = "popDestHeader">
+            <span id = "destTallinn" class = "destLink">Tallinn</span>
+            <span id = "destTartu" class = "destLink">Tartu</span>
+            <span id = "destHelsinki" class = "destLink">Helsinki</span>
+            <span id = "destPrague" class = "destLink">Prague</span>
+        </p>
+
+        <div id = "destTextPrague">
+            <img class = "descrImg" src="../assets/images/prague.png" width="500" height="300" alt="Prague Vysegrad Castle">
+            <p>
+                Prague is a political, cultural, and economic centre of central Europe complete with a rich history. Founded during the Romanesque and flourishing by the Gothic, Renaissance and Baroque eras, Prague was the capital of the Kingdom of Bohemia and the main residence of several Holy Roman Emperors, most notably of Charles IV (r. 1346–1378)
+            </p>
+            <p>
+                Prague is home to a number of well-known cultural attractions, many of which survived the violence and destruction of 20th-century Europe. Main attractions include Prague Castle, Charles Bridge, Old Town Square with the Prague astronomical clock, the Jewish Quarter, Petřín hill and Vyšehrad. Since 1992, the extensive historic centre of Prague has been included in the UNESCO list of World Heritage Sites.
+            </p>
+            <p>
+                The city has more than ten major museums, along with numerous theatres, galleries, cinemas, and other historical exhibits. An extensive modern public transportation system connects the city. It is home to a wide range of public and private schools, including Charles University in Prague, the oldest university in Central Europe.
+            </p>
+        </div>
+
+        <div id = "destTextTallinn">
+            <p>
+                Tallinn is the most populous, primate, and capital city of Estonia. Situated on a bay in north Estonia, on the shore of the Gulf of Finland of the Baltic Sea, Tallinn has a population of 444,532. Tallinn is the main financial, industrial and cultural centre of Estonia.
+            </p>
+            <p>
+                Tallinn received Lübeck city rights in 1248, however the earliest evidence of human population in the area dates back nearly 5,000 years. Due to the strategic location by the Baltic Sea, its medieval port became a significant trade hub, especially in the 14–16th centuries when Tallinn grew in importance as the northernmost member city of the Hanseatic League. Tallinn's Vanalinn ("Old town") is one of the best preserved medieval cities in Europe and is listed as a UNESCO World Heritage Site.
+            </p>
+            <p>
+                Tallinn has the highest number of start-ups per person among European countries[10] and is the birthplace of many international high technology companies, including Skype and Wise.  In 2007, Tallinn was listed among the top ten digital cities in the world.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

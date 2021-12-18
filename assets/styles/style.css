@@ -1,0 +1,91 @@
+.mandatory {
+    font-style:         italic;
+    color:              blue;
+}
+
+header {
+    background-color: gray;
+    position: sticky;
+    top: 5px;
+}
+
+h1 {
+    font-family:        "Times New Roman", serif;
+}
+
+h3 {
+    text-decoration:    underline;
+}
+
+#wrapperDiv {
+    border: 1px solid black;
+}
+
+#formDiv {
+    float: left;
+    width: 300px;
+}
+
+.descr {
+    font-size: larger;
+    font-family: Calibri, sans-serif;
+}
+
+.disclaimer {
+    font-style: italic;
+}
+
+@media only screen and (min-width: 800px) {
+    #descDiv {
+        text-align: start;
+        margin-left: 100px;
+        width: 60%;
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #descDiv {
+        float: left;
+        align-content: start;
+    }
+}
+
+#popDest {
+    width: 80%;
+    float: bottom;
+}
+
+#popDestHeader {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: cadetblue;
+}
+
+.destLink {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    font-size: x-large;
+}
+
+img.descrImg {
+    float: right;
+    margin-left: 100px;
+}
+
+#destTextTallinn {
+    display: none;
+}
+
+#destTallinn:hover + #destTextTallinn {
+    display: block;
+}
+
+#destTextPrague {
+    display: none;
+}
+
+#destPrague:hover + #destTextPrague {
+    display: block;
+}
