@@ -26,8 +26,9 @@ h3 {
 }
 
 #wrapperDiv {
-    border: 1px solid black;
     background-color: rgba(255, 255, 255, 30%);
+    overflow: auto;
+    padding-bottom: 50px;
 }
 
 #formDiv {
@@ -61,8 +62,11 @@ h3 {
 }
 
 #popDest {
-    width: 80%;
     float: bottom;
+    background-color: rgba(255, 255, 255, 30%);
+    overflow: auto;
+    margin-top: 20px;
+    padding-bottom: 50px;
 }
 
 #popDestHeader {
